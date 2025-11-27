@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>网规基础8网络互连与互联网 | JYhe</title><meta name="keywords" content="网络规划设计师,基础知识"><meta name="author" content="JYhe"><meta name="copyright" content="JYhe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="网规基础8网络互连与互联网"><meta name="application-name" content="网规基础8网络互连与互联网"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="网规基础8网络互连与互联网"><meta property="og:url" content="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/index.html"><meta property="og:site_name" content="JYhe"><meta property="og:description" content="TCP&amp;#x2F;IP是事实上的 Internet互连标准，共 5层，但有定义并制定了具体协议的是应用层、 传输层和网络层 (Internet层)。本章讲述计算机网络的互连设备、接入网技术、网络层、传输 层和应用层的相关协议和实现技术等。 网络互连设备 网络互连设备是网络传输中相互连接的硬件设备，包括中继器、"><meta property="og:locale" content="en"><meta property="og:image" content="http://example.com/img/default_cover.jpg"><meta property="article:author" content="JYhe"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="http://example.com/img/default_cover.jpg"><meta name="description" content="TCP&amp;#x2F;IP是事实上的 Internet互连标准，共 5层，但有定义并制定了具体协议的是应用层、 传输层和网络层 (Internet层)。本章讲述计算机网络的互连设备、接入网技术、网络层、传输 层和应用层的相关协议和实现技术等。 网络互连设备 网络互连设备是网络传输中相互连接的硬件设备，包括中继器、"><link rel="shortcut icon" href="/img/JYHE.jpg"><link rel="canonical" href="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  music_page_default: undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: false,
+  mainTone: undefined,
+  authorStatus: {"skills":null},
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"Author: JYhe","link":"Link: ","source":"Source: JYhe","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.","copySuccess":"Copy success, copy and reprint please mark the address of this article"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'JYhe',
+  title: '网规基础8网络互连与互联网',
+  postAI: '',
+  pageFillDescription: '网络互连设备, 接入网技术, xDSL 接人, ADSL 摄入, VDSL 接入, Cable Modem 接入, 局域网接入, 无线接入, 无线接入技术, 宽带无线接入, 光网络接入, 光纤接入技术, 无源光网络是事实上的互连标准共层但有定义并制定了具体协议的是应用层传输层和网络层层本章讲述计算机网络的互连设备接入网技术网络层传输层和应用层的相关协议和实现技术等网络互连设备网络互连设备是网络传输中相互连接的硬件设备包括中继器网桥交换机路由器网关和无线接入点等中继器的功能是对接收信号进行再生和发送中继器不解释也不改变接收到的数字信息它只是从接收信号中分离出数字数据存储起来然后重新构造它并转发出去再生的信号与接收信号完全相同并可以沿着另外的网段传输到远端集线器的工作原理基本上与中继器相同简单地说集线器就是一个多端口中继器它把一个端口上收到的数据广播发送到其他所有端口上网桥工作于数据链路层用于连接两个局域网段网桥要分析帧地址字段以决定是否把收到的帧转发到另一个网段上网桥检查帧的源地址和目标地址如果目标地址和源地址不在同一个网段上就把帧转发到另一个网段上若两个地址在同一个网段上则不转发所以网桥能起到过滤帧的作用以太网中广泛使用的交换机是一种多端口网桥每一个端口都可以连接一个局域网交换机是一种基于地址识别能完成封装转发数据帧功能的网络设备交换机可以学习地址并把其存放在内部地址表中通过在数据帧的始发者和目标接收者之间建立临时的交换路径使数据帧直接由源地址到达目的地址路由器工作于网络层路由器根据网络逻辑地址在互连的子网之间传递分组一个子网可能对应于一个物理网段也可能对应于几个物理网段路由器适合于连接复杂的大型网络它工作于网络层因而可以用于连接下面三层执行不同协议的网络协议的转换由路由器完成从而消除了网络层协议之间的差别通过路由器连接的子网在网络层之上必须执行相同的协议对于路由器如何协调网络协议之间的差别如何进行路由选择以及如何在通信子网之间转发分组将在后面进行讲解网关是最复杂的网络互连设备它用于连接网络层之上执行不同协议的子网组成异构型的因特网网关能对互不兼容的高层协议进行转换例如使用公司的工作站和网络互连两者不仅硬件不同而且整个数据结构和使用的协议都不同为了实现异构型设备之间的通信网关要对不同的传输层会话层表示层和应用层协议进行翻译和变换无线接入点是一个包含单纯性无线接入点无线和无线路由器含无线网关无线网桥等类设备的统称单纯性无线就是一个无线的交换机仅仅是提供一个无线信号发射的功能单纯性无线的工作原理是将网络信号通过双绞线传送过来经过产品的编译将电信号转换成为无线电讯号发送出来形成无线网的覆盖根据不同的功率其可以实现不同程度不同范围的网络覆盖一般无线的最大覆盖距离可达到多数单纯性无线本身不具备路由功能目前大多数的无线都支持多用户台电脑接入数据加密多速率发送等功能在家庭办公室内一个无线便可实现所有电脑的无线接入接入网技术接入网除了包含用户线传输系统复用设备外还包括数字交叉连接设备和用户网络接口设备接入网为本地交换机与用户端设备之间的实施系统其目的是综合考虑本地交换机用户环路和终端设备通过有限的标准化接口将各种用户所需求的业务接入节点接人数字用户线路由于采用了先进的数据调制技术通过普通的电话线就可以达到非常高的吞吐量是对所有不同的总称目前共有七种其中和使用最广摄入非对称数字用户环路是一种上下行传输速率不等的高速数字用户环路且在同一对用户线上还可同时传送传统的模拟话音信号在用户端或机顶盒通过远端和模拟话音分离器接入用户铜线在局端用户线通过分离器接入局端井经由数字用户线路接入复用器进行复接复接后的高速数据流经由和路由器进在系统中收发信机从一对用户线中辟出三个通道普通电话业务信道中速双工数据信道高速下行数据信道普通电话业务占据以下的基带并通过无源低通滤波器与数字信号分离以保证在系统出现故障情况下仍能保证通话业务上行信道数据速率为下行信道包括一个中速双向信道的下行部分速率同上行信道和一个高速单工下行通道这三个通道可以同时工作在实际应用中频段划分视设备而异各信道数据速率与占用线路频宽及调制效率码速率调制符号速率有关系统是针对住宅用户设计的目前大多用于高速接入网业务并能享用运营商所提供的诸如点播电视远程教学远程医疗居家购物可视电话多方可视游戏等多媒体业务接入由于技术在提供图像传输时下行带宽十分有限而且成本偏高在提高系统下行带宽过程中系统逐步演变为甚高比特数字用户环路系统用于接入网中的最后一段入户连接其传输距离只有时时其传输速率为下行达上行为由于系统传输距离缩短码间干扰大大减小对数字信号处理要求亦大为简化收发信机成本有望比降低一半系统因传输距离短故一般作为光纤到路边和光纤到大楼的宽带延伸从目前看来和无源接入网混合便用是一种比较理想的宽带接入方案接入电缆调制解调器是适用于电缆传输体系的调制解调器它基于有线电视网络利用了有线电视电缆可以同时传输多个频道的工作机制使用电缆带宽的一部分来传送数据是将数据进行调制后在电缆的一个频率范围内传输接收时进行解调传输机理与普通相同不同之处在于它是通过有线电视网络的某个传输颇带进行调制解调的而普通的传输介质在用户与交换机之间是独立的即用户独享通信介质属于共享介质系统其他空闲频段仍然可用于有线电视信号的传输类似于电话线上使用的音频其主要作用是完成数字信号的远距离传送下行载波带宽数据速率在采用调制方式时为采用调制方式时为上行采用或调制方式在带宽范围内数据速率可达多个用户上行信号可在同一载波上分时隙发送我国现在开通的接入业务基本上是基于双向的混合型光纤同轴电缆的的技术具有以下特点连接速度快在目前应用的所有接入方式中是最快的一种成本低廉利用已有的有线电视网络提供了非对称的专线连接是一直在线的用户无需拨号也不用担心遇到忙音只要一打开计算机就会自动建立与的高速连接不受连接距离的限制用户所在地和有线电视中心局之间的同轴电缆能够按照用户的需要延伸不受连接距离的限制局域网接入以太网的传输速率高组网设备价格低廉其传输链路可采用光纤同轴电缆铜缆双绞线等物理媒体随着以太网技术的迅速发展该技术进入城域网和接入网领域目前新建住宅小区和商务楼流行局域网方式接入小区接入节点提供住宅小区接入采用千兆以太网交换机楼宇接入点提供居民楼宇接入采用百兆以太网交换机实现住宅小区的千兆光纤到小区百兆光纤或类线到住宅楼十兆类线到用户的宽带用户接入方案或商务楼的千兆到大楼百兆到楼层十兆到用户的用户接入方案小区或大楼的千兆光纤经由城域网汇聚层的路由交换机进入城域核心网城域网的汇聚层将电话数据以及各种宽带多媒体接入业务汇聚为数据流进入城域骨干网汇聚层可提供诸如点播电视有线电视信息广播等业务该层还有一个重要作用是对用户进行鉴权认证计费和管理用于汇聚层的典型设备包括各类路由器路由交换机各类网关宽带综合接入服务器域名鉴权认证计费等服务器以及各类信息源无线接入无线接入技术无线接入技术是无线通信的关键问题是指通过无线介质将用户终端与网络节点连接起来以实现用户与网络间的信息传递无线信道传输的信号应遵循一定的协议这些协议即构成无线接入技术的主要内容无线接入技术与有线接入技术的一个重要区别在于可以向用户提供移动接入业务无线接入大致可分为三种低速无线本地环无线本地技术源于世纪年代中期出现的蜂窝电话和随后产生的无绳电话等移动通信技术最常用的为蜂窝通信技术即利用模拟蜂窝移动通信技术如总访问通信系统高级移动电话服务系统等这类技术的速率较低像全球通仅能够提供的语音服务和的数据服务宽带无线接入随着无线接入市场的不断扩大许多无线设备制造商开始提供基于无线电波的宽带接入系统如多路多点分配业务和本地多点分配业务这些系统采用数字技术并支持多用户和多种服务数据通信速率一般在卫星接入卫星接入就是利用卫星通信系统提供的接入服务它由人造卫星和地面站组成用卫星作为中转站转发传入的无线电信号其中能够为用户提供电话电视和数据接入服务的卫星接入业务在我国己有了较广泛的应用宽带无线接入宽带无线接入技术虽然没有像等有线宽带技术那样成为主流的接入手段但是由于它自身的优点在整个宽带市场中也占据了一席之地网络规模逐年扩张与传统仅提供窄带话音业务的无线接入技术不同宽带无线接入技术面向的主要应用是数据接入和话音接入的出现源于的发展和用户对宽带数据需求的不断增长各个国家从年开始纷纷为分配频率其中主要包括等频段北美国家主要分配了欧洲的国家则主要分配了频率资源以上的宽带无线接入技术统称为本地多点分配技术我国为分配的频率资源包括其中为扩频通信系统宽带无线接入系统高速无线局域网蓝牙系统等共享的频段其余两个频带则是宽带无线接入专有频带当前宽带无线接入有以下几大技术本地多点分配系统多点多信道分配系统无线局域网蓝牙及其他如红外等高频宽带频谱资源比较多可以传输较高的速率但是由于工作于毫米波受气候影响大抗雨衰性能差降低了在经济发达的东南沿海地区的可用度目前通常所说的为第二代数字系统主要使用无线传送协议具有标准化的网络侧接口和网管协议具有更高带宽和双向数据传输的特点可以提供多种宽带交互式数据业务及话音和图像业务因此人们逐渐将眼光投入带宽达到几乎可以提供任何种类的业务我国己完成频率规划频段为和中频中宽带该频段传输性能好覆盖范围广技术成熟抗雨衰性能良好扩容性强组网灵活且成本具有竞争力是较为理想的无线接入手段由于该频段资源比较紧张能分给肌的频段窄信道数少需用新技术来提高频谱利用率中国已经分配试用和因为频段相对紧张所以格外激发高效利用频率的新技术大量涌现无线局域网无线局域网的主要技术有等当前最具代表性的当数年月通过的工作在频段与有线局域网的不同主要体现在便携性上技术发展较为迅速由于标准成功解决了空中接口兼容性问题促进了无线局域网终端和接入点的互通因此设备成本下降很快应用也非常广泛虽然的公众热点数在增多但是对于技术由于每个的覆盖范围有限因此整个热点内的互连也需要有线网络设施的支撑对网络整体投资有一定的要求蓝牙蓝牙也是一种使用的无线频带频带的通用无线接口技术提供不同设备间的双向短程通信蓝牙的目标是最高数据传输速率有效传输速率为最大传输距离为增加发射功率可达蓝牙的优势是设备成本低体积小而且搭配蓝牙构造一个整体网路的成本要比铺设线缆低相对系列和家族蓝牙的作用不是为了竞争而是相互补充宽带无线接入技术经过近几年的发展己经形成了一定的产业规模随着新的技术涌现宽带无线接入的传输能力在不断增强接口更加开放技术的发展正经历从固定到移动的发展过程光网络接入光纤接入技术光纤接入网是指局端与用户之间完全以光纤作为传输媒体接入网光纤化有很多方案有光纤到路边光纤到小区光纤到办公楼光纤到楼面光纤到家庭采用光纤接入网是光纤通信发展的必然趋势尽管目前各国发展光纤接入网的步伐各不相同但光纤到家庭是公认的接入网发展目标现阶段大规模实现还不经济主要是实现目前可采用的传送技术手段以有源光纤接入如等为主但当无源光纤接入开始得到应用时其将成为的一种最经济有效的技术手段毫无疑问光纤是接入网的理想传输媒介光纤接入网具有以下优点光纤接入网能满足用户对各种业务的需求人们对通信业务的要求越来越高如果要提供高清晰度或交互式视频等业务用铜钱双绞线是难以实现的光纤可以克服铜线电缆无法克服的一些限制因素且损耗低频带宽解除了铜线电缆网径小的限制此外光纤不受电磁干扰保证了信号传输质量光纤接入网的性能不断提高价格不断下降光纤接入网提供数字业务有完善的监控和管理系统能适应将来宽带综合业务的需要打破有限带宽的传输瓶颈使信息高速公路畅通无阻现在影响光纤接入网发展的主要原因不是技术而是成本直至目前光纤接入网的成本仍然较高无源光网络无源光网络技术是最新发展的点到多点的光纤接入技术无源光网络由光线路终端光网络单元和光分配网络组成一般其下行采用广播方式上行采用时分多址接入方式而且可以灵活地组成树型星型总线型等拓扑结构典型结构为树型的本质特征就是全部由无源光器件组成不包含任何有源电子器件这样避免了外部设备的电磁干扰和雷电影响减少了线路和外部设备的故障率提高了系统可靠性同时节省了维护成本与有源光接入技术相比由于消除了局端与用户端之间的有源设备从而使得维护简单可靠性高成本低而且能节约光纤资源目前技术主要有基于的基于以太网的和等几种其主要差异在于采用了不同的二层技术是世纪年代中期被和全业务接入网论坛标准化的技术在年年底又将更名为的最高速率为二层采用的是封装和传送技术因此存在带宽不足技术复杂价格高承载业务效率低等问题未能取得市场上的成功为更好地适应业务第一英里以太网联盟在年年初提出了在二层用以太网取代的技术工作小组对其进行了标准化可以支持对称速率将来速率还能升级到产品得到了更大程度的商用由于其将以太网技术与技术完美结合因此非常适合业务的宽带接入技术对于吉位每秒速率的系统也常称为在提出概念的同时又提出了与己对其进行了标准化其技术特色是在二层采用定义的通用成帧规程对等多种业务进行封装映射能提供下行速率和所有标准的上行速率并具有强大的操作管理维护和配置吨功能在高速率和支持多业务方面有明显优势但目前成本要高于产品的成熟性也逊于',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-28 00:13:25',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/img/JYHE.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">JYhe</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 1.05rem;">基础知识<sup>9</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/" style="font-size: 1.05rem;">网络规划设计师<sup>9</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92/" itemprop="url">网络规划</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>网络规划设计师</span></a><a class="article-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>基础知识</span></a></span></div></div><h1 class="post-title" itemprop="name headline">网规基础8网络互连与互联网</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2025-11-27T05:42:00.000Z" title="Created 2025-11-27 13:42:00">2025-11-27</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-11-27T16:13:25.888Z" title="Updated 2025-11-28 00:13:25">2025-11-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为广东"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>广东</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/default_cover.jpg"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/"><header><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92/" itemprop="url">网络规划</a><a href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/" tabindex="-1" itemprop="url">网络规划设计师</a><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" tabindex="-1" itemprop="url">基础知识</a><h1 id="CrawlerTitle" itemprop="name headline">网规基础8网络互连与互联网</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">JYhe</span><time itemprop="dateCreated datePublished" datetime="2025-11-27T05:42:00.000Z" title="Created 2025-11-27 13:42:00">2025-11-27</time><time itemprop="dateCreated datePublished" datetime="2025-11-27T16:13:25.888Z" title="Updated 2025-11-28 00:13:25">2025-11-28</time></header><p>TCP/IP是事实上的 Internet互连标准，共 5层，但有定义并制定了具体协议的是应用层、 传输层和网络层 (Internet层)。本章讲述计算机网络的互连设备、接入网技术、网络层、传输 层和应用层的相关协议和实现技术等。</p>
+<h2 id="网络互连设备">网络互连设备</h2>
+<p>网络互连设备是网络传输中相互连接的硬件设备，包括中继器、网桥 (交换机)、路由器、 网关和无线接入点(AP) 等。</p>
+<p>中继器的功能是对接收信号进行再生和发送。中继器不解释也不改变接收到的数字信息 ， 它只 是从接收信号中分离 出数字数据，存储起来， 然后重新构造它并转发出去。再生 的信号与 接收信号完全相同，并可以沿着另外的网段传输到远端。集线器的工作原理基本上与中继器相同。简单地说，集线器就是一个多端口中继器，它把一个端口上收到的数据广播发送到其他所有端口上。</p>
+<p>网桥工作于数据链路层 ， 用于连接两个局域网段。网桥要分析帧地址字段 ，以决定是否把 收到的帧转发到另 一个网段上 。 网桥检查帧的源地址和目标地址，如果目标地址和源地址不在 同一个网段上，就把帧转发到另 一个网段上; 若两个地址在同 一个网段上，则不转发，所以网 桥能起到过滤帧的作用 。 以太网中广泛使用的交换机是一种多端 口网桥，每一个端口都可以连 接一个局域网， 交换机是一种基于 MAC 地址识别， 能完成封装转发数据帧功能的网络设备。 交换机可以“学习 ” MAC 地址， 并把其存放在内部地址表中，通过在数据帧的始发者和目标 接收者之间建立临时的交换路径 ， 使数据帧直接由源地址到达目的地址。</p>
+<p>路由器工作于网络层，路由器根据网络逻辑地址在互连 的子网之间传递分组 。 一个子 网可 能对应于一个物理网段，也可能对应于几个物理网段。路由器适合于连接复杂的大型网络，它工作于网络层 ， 因而可以用于连接下面三层执行不同协议的网络，协议的转换由路由器完成， 从而消除了网络层协议之间的差别，通过路由器连接的子网在网络层之上必须执行相同的协 议。对于路由器如何协调网络协议之间的差别，如何进行路由选择以及如何在通信子网之间转 发分组，将在后面进行讲解 。</p>
+<p>网关是最复杂的网络互连设备，它用于连接网络层之上执行不同协议的子网 ，组成异构 型的因特网。 网关能对互不兼容的高层协议进行转换，例如使用 Novell 公司 NetWare 的 PC 工作站和 SNA 网络互连 ，两者不仅硬件不 同，而且整个数据 结构和使用的协议都不同 。为了 实现异构型设备之间的通信，网关要对不同的传输层、 会话层、 表示层和应用层协议进行翻 译和变换 。<br>
+无线接入点( Access Point, AP)是一个包含单纯性无线接入点(无线 AP)和无线路由器 (含无线网关、无线网桥) 等类设备的统称。 单纯性无线 AP就是一个无线的交换机，仅仅是提 供一个无线信号发射的功能。 单纯性无线 AP 的工作原理是将网络信号通过双绞线传送过来， 经过 AP 产品的编译，将电信号转换成为无线电讯号发送出来，形成无线网的覆盖。 根据不同 的功率 ，其可以实现不同程度、不同范围的网络覆盖， 一般无线 AP 的最大覆盖距离可达到Om。 多数单纯性无线 AP 本身不具备路由功能，目前大多数的无线 AP 都支持多用户 (30-100 台电脑)接入、数据加密、多速率发送等功能，在家庭、办公室内， 一个无线 AP 便可实现所有电 脑的无线接入 。</p>
+<h2 id="接入网技术">接入网技术</h2>
+<p>接入网(AccessNetwork, AN)除了包含用户线传输系统、复用设备外，还包括数字交叉 连接设备和用户 /网络接口设备 。 接入网为本地交换机 CLE)与用 户 端设备( TE)之间的实施 系统，其目的是综合考虑本地交换机、用户环路和终端设备 ， 通过有限的标准化接口将各种用 户所需求的业务接入节点 。</p>
+<h3 id="xDSL-接人">xDSL 接人</h3>
+<p>数字用户线路( Digital Subscriber Lines, DSL)由于采用了先进的数据调制技术，通过普 通的电话线就可以达到非常高的吞吐 量。 xDSL 是对所有不同 DSL 的总称 。 目前共有七种 DSL, 其中 ADSL 和 VDSL 使用最广。</p>
+<h3 id="ADSL-摄入">ADSL 摄入</h3>
+<p>非对称数字用户环路(ADSL)是一种上、下行传输速率不等的高速数字用户环路，且在 同一对用户线上还可同时传送传统的模拟话音信号 。 在用户端 PC 或机顶盒通过 ATU-R(远端 ASDLModem)和模拟话音分离器接入用户铜线 。 在局端用户线通过分离器接入 ATU-C (局端 ADSL Modem)，井经由数字用户线路接入复用器 DSLAM (Digital Subscriber Line Access Multiplexed)进行复接。 复接后的高速数据流经由 ISP/LAN和路由器进 Internet。</p>
+<p>在 ADSL 系统中， ADSL 收发信机从一对用户线中辟出三个通道: 普通电话业务( POTS) 信道、中速双工数据信道、高速下行数据信道 。 普通电话业务占据 4kHz 以下的基带 ， 并通过无 源低通滤波器与数字信号分离，以保证在 ADSL 系统出现故障情况下仍能保证通话业务 。 上行信 道数据速率为 16kbps~1Mbps:下行信道包括一个中速双向信道的下行部分(速率同上行信道) 和一个高速(1,5Mbps~9Mbps)单工下行通道。 这三个通道可以同时工作。 在实际应用中频段划 分视设备而异 。 各信道数据速率与占用线路频宽及调制效率(码速率/调制符号速率)有关 。</p>
+<p>ADSL 系统是针对住宅用户设计的，目前 ADSL 大多用于高速接入 Internet 网业务，并能享用ISP运营商所提供的诸如点播电视、远程教学、远程医疗、居家购物、可视电话、多方可视游戏等多媒体业务 。</p>
+<h3 id="VDSL-接入">VDSL 接入</h3>
+<p>由于 ADSL 技术在提供图像传输时下行带宽十分有限，而且成本偏高。在提高系统下行带 宽过程中系统逐步演变为甚高比特数字用户环路( VDSL) 。</p>
+<p>VDSL 系统用于接入网中的最后 一段入户连接 。其传输距离只有 300m ( 52Mbps 时)~1km (13Mbps时) 。其传输速率为:下行达 13Mbps~52Mbps: 上行为 1.5Mbps~2Mbps。</p>
+<p>由于 VDSL 系统传输距离缩短，码间干扰大大减小，对数字信号处理要求亦大为简化， 收 发信机成本有望比 ADSL 降低一半。</p>
+<p>VDSL 系统因传输距离短，故一般作为光纤到路边(FTTC)和光纤到大楼(FTTB) 的宽带延伸 。 从目前看来 VDSL 和 ATM 无源接入网 CAPON)混合便用是一种比较理想的宽带接入 方案。</p>
+<h3 id="Cable-Modem-接入">Cable Modem 接入</h3>
+<p>电缆调制解调器( Cable Modem) 是适用于电缆传输体系的调制解调器。 它基于有线电视 网络，利用了有线电视电缆可 以同时传输多个频道的工作机制，使用电缆带宽 的一部分来传送 数据。 CableModem是将数据进行调制后在电缆的一个频率范围内传输， 接收时进行解调，传 输机理与普通 Modem 相同 。 不同之处在于它是通过有线电视网络的某个传输颇带进行调制解 调的。 而普通 Modem 的传输介质在用户与交换机之间是独立的，即用户独享通信介质。 Cable Modem 属于共享介质系统 ， 其他空 闲频段仍然 可用于有线电视信号的传输 。</p>
+<p>Cable Modem类似于电话线上使用的音频 Modem，其主要作用是完成数字信号的远距离传 送。 CableModem下行载波带宽6MHz，数据速率在采用64QAM调制方式时为31.2Mbps:采 用 256QAM 调制方式时为 41.6Mbps。上行采用 QPSK 或 16QAM 调制方式在 200kHz~3.2MHz 带宽范围内，数据速率可达 320kbps~lOMbps，多个用户 Cable Modem 上行信号可在同 一载波 上分时隙发送。</p>
+<p>我国现在开通的 Cable Modem 接入业务基本上是基于双向的混合型光纤同轴 电缆( HFC) 的。 CableModem 的技术具有以下特点:</p>
+<p>(1)连接速度快。在目前应用的所有接入方式中， CableModem是最快的一种。<br>
+(2)成本低廉。 Cable Modem 利用已有的有线电视网络 。<br>
+(3)提供了非对称的专线连接。 CableModem是一直在线的，用户无需拨号，也不用担心遇到忙音 ， 只要一打开计算机就会自动建立与 Internet 的高速连接 。<br>
+(4)不受连接距离的限制 。 用户所在地和有线电视中心局之间的同轴电缆能够按照用 户 的</p>
+<p>需要延伸，不受连接距离的限制 。</p>
+<h2 id="局域网接入">局域网接入</h2>
+<p>以太网的传输速率高、组网设备价格低廉，其传输链路可采用光纤、同轴电缆、铜缆双绞 线等物理媒体 。 随着 以太网技术的迅速发展，该技术进入 IP 城域网 和接入 网领域 。</p>
+<p>目前新建住宅小区和商务楼流行局域网( LAN)方式接入 。 小区接入节点( ZAN)提供住 宅小区接入，采用千兆以太网交换机 : 楼宇接入点 (BAN)提供居民楼宇接入，采用百兆以太 网交换机，实现住宅小区的千兆光纤到小区、百兆光纤或 5 类线到住宅楼、十兆 5 类线到用户 的宽带用户接入方案，或商务楼的千兆到大楼、百兆到楼层、十兆到用户的用户接入方案。小 区或大楼的千兆光纤经由 IP 城域网汇聚层的路由交换机进入城域核心网 。</p>
+<p>城域网的汇聚层将电话、数据以及各种宽带多媒体接入业务，汇聚为 IP 数据流进入城域 骨干网 。 汇聚层可提供诸如点播电视、有线电视、信息广播等业务 。 该层还有一个重要作用 ， 是对用户进行鉴权 、认证、计费和 管理。用于汇聚层 的典型设备包括各类路由器、路由交换机、 各类网关、宽带综合接入服务器、 WWW 、 DNS (域名)、 AAA (鉴权、认证、计费)等服务 器以及各类信息源 。</p>
+<h2 id="无线接入">无线接入</h2>
+<h3 id="无线接入技术">无线接入技术</h3>
+<p>无线接入技术是无线通信的关键问题，是指通过无线介质将用户终端与网络节点连接起 来，以实现用户与网络间的信息传递 。 无线信道传输的信号应遵循一定的协议，这些协议即构 成无线接入技术的 主要 内容 。无线接入技术与有线接入技术的 一个重要区 别在于可以向用户提 供移动接入业务 。</p>
+<p>无线接入大致可分为三种。</p>
+<p>(1)低速无线本地环。无线本地技术源于 20世纪 40年代中期出现的蜂窝电话和随后产生 的无绳电话等移动通信技术。最常用 的为蜂窝通信技术，即利用模拟蜂窝移动通信技术，如总 访问通信系统、高级移动电话服务系统等。这类技术的速率较低，像全球通仅能够提供 13kb/s 的语音服务和 9. 6kb/s的数据服务。</p>
+<p>(2)宽带无线接入。随着无线接入市场的不断扩大，许多无线设备制造商开始提供基于无 线电波的宽带接入系统， 如多路多点分配业务和本地多点分配业务。这些系统采用数字技术， 并支持多用户和多种服务，数据通信速率一般在 128skb/s~ 155kb/s。</p>
+<p>(3)卫星接入。卫星接入就是利用卫星通信系统提供的接入服务。它由人造卫星和 地面站 组成，用卫星作为中转站转发传入的无线电信号。其中，能够为用户提供电话、电视和数据接 入服务的卫星接入业务，在我国己有了较广泛的应用。</p>
+<h3 id="宽带无线接入">宽带无线接入</h3>
+<p>宽带无线接入技术虽然没有像 ADSL 等有线宽带技术那样成为主流的接入手段 ， 但是由于 它自身的优点，在整个宽带市场中也占据了 一席之地， 网络规模逐年扩张 。<br>
+与传统仅提供窄带话音业务的无线接入技术不同， 宽带无线接入技术 (BWA)面向的主要 应用是 IP 数据接入和话音接入。BWA的出现源于 Internet 的发展和用户对宽带数据需求的不 断增长。各个国家从 1999年开始纷纷为 BWA 分配频率，其中主要包括 2.5GHz、3.5GHz、5GHz、24GHz、 26GHz等频段。 北美国家主要分配了 2.5GHz，欧洲的国家则主要分配了 3.5GHz频 率资源。 20GHz 以上的宽带无线接入技术统称为本地多点分配技术(LMDS) 。 我国为 BWA 分配的频率资源包括 3.5GHz、 5.8GHz、 26GHz LMDS， 其中 5.8GHz 为扩频通信系统、宽带无线接入系统、高速无线局域网、蓝牙系统等共享的频段， 其余两个频带则是宽带无线接入 专有频带。</p>
+<p>当前宽带无线接入有以下几大技术: LMDS ( Local Multipoint Distribution System， 本地多点分配系统)、 MMDS (Multipoint Multichannel Distribution System， 多点多信道分配系统) 、 无线局域网、蓝牙及其他 (如红外等)。</p>
+<p>(1) LMDS (高频宽带、24/26GHz~38GHz)。LMDS 频谱资源比较多，可以传输较高 的速率，但是由于工作于毫米波，受气候影响大，抗雨衰性能差，降低了在经济发达的东南沿海地区的可用度。目前通常所说的 LMDS 为第二代数字系统， 主要使用无线 ATM传送协议， 具有标准化的网络侧接口和网管协议。 LMDS 具有更高带宽和双向数据传输的特点，可以提供 多种宽带交互式数据业务及话音和图像业务， 因此人们逐渐将眼光投入带宽达到 1GHz， 几乎 可以提供任何种类的业 务。我国己完成频率规划，频段为24.507GHz~ 25.515GHz 和 25.757GHz~ 26.765GHz。</p>
+<p>(2)MMDS (中频中宽带、 2GHz~5GHz) 。该频段传输性能好、 覆盖范围广、技术成熟、 抗雨衰性能良好、扩容性强、组网灵活且成本具有竞争力 ， 是较为理想的无线接入手段。由于 该频段资源比较紧张，能分给 M肌IDS 的频段窄， 信道数少， 需用新技术来提高频谱利用率。 中国已经分配试用 (3.4GHz~3.43GHz 和 3.5GHz~3.53GHz) 。因为频段相对紧张，所以格外 激发高效利用频率的新技术大量涌现。</p>
+<p>(3)无线局域网 WLAN。无线局域 网的主要技术有 IEEE802.l1b、 IEEE 802.11a、 IEEE 802.llg、HiperLAN 等。当前最具代表性的 当数 IEEE 802. 11b。 1999 年 9 月通过的 IEEE 802.11b 工作在 2.4GHz~2.483GHz频段。与有线局域网的不同主要体现在便携性上。 WLAN 技术发展 较为迅速，由于 IEEE 802.1l 标准成功解决了空中接口兼容性问题，促进了无线局域网终端和 接入点( AP)的互通，因此 WLAN 设备成本下降很快 ， 应用 也非常广泛。</p>
+<p>虽然WLAN的公众热点数在增多， 但是对于WLAN技术，由于每个AP的覆盖范围有限， 因此整个热点内 AP 的互连也需要有线网络设施的支撑， 对网络整体投资有一定的要求。</p>
+<p>(4) 蓝牙。蓝牙也是一种使用 2.4GHz~2.483GHz 的无线频带 (ISM 频带)的通用无线接 口技术，提供不同设备间的双向短程通信。蓝牙的目标是最高数据传输速率 1Mbit/s C有效传输 速率为 721kbit/s)、最大传输距离为 IOcm~IOm (增加发射功率可达 100m)。蓝牙的优势是 设备成本低、体积小 。而且 ， 搭配“蓝牙 ”构造一个整体网路的成本要比铺设线缆低 。相对 802.1lx</p>
+<p>系列和 HiperLAN 家族,蓝牙的作用不是为了竞争,而是相互补充。宽带无线接入技术经过近几年的发展，己经形成了一定的产业规模。随着新的技术涌现，宽带无线接入的传输能力在不断增强，接口更加开放，技术的发展正经历从固定到移动的发展过程。</p>
+<h2 id="光网络接入">光网络接入</h2>
+<h3 id="光纤接入技术">光纤接入技术</h3>
+<p>光纤接入网是指局端与用户之间完全以光纤作为传输媒体。 接入网光纤化有很多方案，有 光纤到路边（FTTC）、光纤到小区（FTTZ）、光纤到办公楼 （FTTB）、光纤到楼面 （FTTF）、 光纤到家庭（FTTH）。采用光纤接入网是光纤通信发展的必然趋势，尽管目前各国发展光纤接入网的步伐各不相同，但光纤到家庭是公认的接入网发展目标。 现阶段大规模实现FTTH还 不经济，主要是实现FTTB/FTTC，目前可采用的传送技术手段以有源光纤接入（如PDH、ATM、 SDH、 GE/FE 等）为主，但当无源光纤接入开始得到应用时， 其将成为 FTTH 的一种最经济有 效的技术手段。<br>
+毫无疑问，光纤是接入网的理想传输媒介。光纤接入网具有以下优点：<br>
+1光纤接入网能满足用户对各种业务的需求。 人们对通信业务的要求越来越高， 如果要 提供高清晰度或交互式视频等业务，用铜钱双绞线是难以实现的。<br>
+2光纤可以克服铜线电缆无法克服的一些限制因素，且损耗低、频带宽，解除了铜线电 缆网径小的限制，此外， 光纤不受电磁干扰， 保证了信号传输质量。<br>
+3光纤接入网的性能不断提高， 价格不断下降。<br>
+4光纤接入网提供数字业务，有完善的监控和管理系统，能适应将来宽带综合业务的需 要，打破有限带宽的传输瓶颈， 使信息高速公路畅通无阻。<br>
+现在， 影响光纤接入网发展的主要原因不是技术，而是成本。直至目前，光纤接入网的成本仍然较高。</p>
+<h3 id="无源光网络">无源光网络</h3>
+<p>无源光网络(PON)技术是最新发展的点到多点的光纤接入技术。无源光网络由光线路终端COLT）、光网络单元（ONU）和光分配网络（ODN）组成。 一般其下行采用 TDM广播方式、上行采用TDMA （时分多址接入）方式，而且可以灵活地组成树型、星型、总线型等拓扑结构（典型结构为树型） 。 PON 的本质特征就是ODN全部由无源光器件组成， 不包含任何有 源电子器件， 这样避免了外部设备的电磁干扰和雷电影响， 减少了线路和外部设备的故障率， 提高了系统可靠性，同时节省了维护成本。与有源光接入技术相比， PON 由于消除了局端与用 户端之间的有源设备， 从而使得维护简单、可靠性高、成本低，而且能节约光纤资源。 目前PON技术主要有APON（基于ATM 的PON）、 EPON（基于以太网的PON）和GPON ( Gigabit PON）等几种，其主要差异在于采用了不同的二层技术。<br>
+(1) APON。 APON 是 20 世纪 90 年代中期被 ITU 和全业务接入网论坛（FSAN）标准化 的PON技术，在2001 年年底FSAN又将APON更名为 BPON,APON 的最高速率为 622Mbit/s， 二层采用的是ATM封装和传送技术， 因此存在带宽不足、技术复杂、价格高、承载IP业务效 率低等问题， 未能取得市场上的成功<br>
+(2) EPON。 为更好地适应IP业务，第一英里以太网联盟（EFMA）在2001 年年初提出了在二层用以太网取代ATM的EPON技术， IEEE 802. 3ah 工作小组对其进行了标准化， EPON可以支持1.25Gbps对称速率，将来速率还能升级到 10Gbps。 EPON产品得到了更大程度的商用，由于其将以太网技术与PON技术完美结合，因此非常适合IP业务的宽带接入技术。 对于吉位每秒（Gbps）速率的EPON系统，也常称为GEPON。<br>
+(3) GPON。在 EFMA提出 EPON概念的同时， FSAN又提出了 GPON, FSAN与ITU 己<br>
+对其进行了标准化，其技术特色是在二层采用ITU-T定义的GFP（通用成帧规程）对Ethernet、TDM、 ATM等多种业务进行封装映射，能提供 l.25Gbps、 2.5Gbps下行速率和所有标准的上行速率，并具有强大的操作、管理、维护和配置 （Operation, Administration, Maintenance and Provisioni吨， OAMP） 功能。在高速率和支持多业务方面， GPON有明显优势， 但目前成本要高于EPON， 产品的成熟性也逊于EPON</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src="/img/JYHE.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src="/img/JYHE.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">JYhe</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/')">网规基础8网络互连与互联网</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=网规基础8网络互连与互联网&amp;url=http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/&amp;pic=/img/default_cover.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>网络规划设计师<span class="tagsPageCount">9</span></a><a class="post-meta__box__tags" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>基础知识<span class="tagsPageCount">9</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="/img/default_cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2025/11/26/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%807%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/"><img class="prev-cover" src="/img/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">网规基础7移动通信网络</div></div></a></div><div class="next-post pull-right"><a href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/"><img class="next-cover" src="/img/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">网规基础9网络层协议</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2025/10/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%801%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/" title="1计算机网络历史组成"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-10-27</div><div class="title">1计算机网络历史组成</div></div></a></div><div><a href="/2025/10/29/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%802%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E6%A6%82%E5%BF%B5/" title="2数据通讯概念"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-10-29</div><div class="title">2数据通讯概念</div></div></a></div><div><a href="/2025/10/30/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%803%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%EF%BC%8C%E8%B0%83%E5%88%B6%E6%8A%80%E6%9C%AF%E4%B8%8E%E9%80%9A%E4%BF%A1%E9%A2%86%E5%9F%9F/" title="3数据编码，调制技术与通信领域"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-10-30</div><div class="title">3数据编码，调制技术与通信领域</div></div></a></div><div><a href="/2025/11/05/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%805%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础5无线通信网络"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-11-05</div><div class="title">网规基础5无线通信网络</div></div></a></div><div><a href="/2025/11/02/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%804%E5%B1%80%E5%9F%9F%E7%BD%91%EF%BC%8C%E5%B9%BF%E5%9F%9F%E7%BD%91/" title="网规基础4局域网，广域网"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-11-02</div><div class="title">网规基础4局域网，广域网</div></div></a></div><div><a href="/2025/11/19/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%806%E6%97%A0%E7%BA%BF%E4%B8%AA%E4%BA%BA%E7%BD%91/" title="网规基础6无线个人网"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-11-19</div><div class="title">网规基础6无线个人网</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src="/img/JYHE.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description"></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E8%AE%BE%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text">网络互连设备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91%E6%8A%80%E6%9C%AF"><span class="toc-number">2.</span> <span class="toc-text">接入网技术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#xDSL-%E6%8E%A5%E4%BA%BA"><span class="toc-number">2.1.</span> <span class="toc-text">xDSL 接人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ADSL-%E6%91%84%E5%85%A5"><span class="toc-number">2.2.</span> <span class="toc-text">ADSL 摄入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VDSL-%E6%8E%A5%E5%85%A5"><span class="toc-number">2.3.</span> <span class="toc-text">VDSL 接入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cable-Modem-%E6%8E%A5%E5%85%A5"><span class="toc-number">2.4.</span> <span class="toc-text">Cable Modem 接入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B1%80%E5%9F%9F%E7%BD%91%E6%8E%A5%E5%85%A5"><span class="toc-number">3.</span> <span class="toc-text">局域网接入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E7%BA%BF%E6%8E%A5%E5%85%A5"><span class="toc-number">4.</span> <span class="toc-text">无线接入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E7%BA%BF%E6%8E%A5%E5%85%A5%E6%8A%80%E6%9C%AF"><span class="toc-number">4.1.</span> <span class="toc-text">无线接入技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%BD%E5%B8%A6%E6%97%A0%E7%BA%BF%E6%8E%A5%E5%85%A5"><span class="toc-number">4.2.</span> <span class="toc-text">宽带无线接入</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%89%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%85%A5"><span class="toc-number">5.</span> <span class="toc-text">光网络接入</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%89%E7%BA%A4%E6%8E%A5%E5%85%A5%E6%8A%80%E6%9C%AF"><span class="toc-number">5.1.</span> <span class="toc-text">光纤接入技术</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E6%BA%90%E5%85%89%E7%BD%91%E7%BB%9C"><span class="toc-number">5.2.</span> <span class="toc-text">无源光网络</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/" title="网规基础9网络层协议"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础9网络层协议"/></a><div class="content"><a class="title" href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/" title="网规基础9网络层协议">网规基础9网络层协议</a><time datetime="2025-11-27T05:42:00.000Z" title="Created 2025-11-27 13:42:00">2025-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/" title="网规基础8网络互连与互联网"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础8网络互连与互联网"/></a><div class="content"><a class="title" href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/" title="网规基础8网络互连与互联网">网规基础8网络互连与互联网</a><time datetime="2025-11-27T05:42:00.000Z" title="Created 2025-11-27 13:42:00">2025-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/26/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%807%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础7移动通信网络"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础7移动通信网络"/></a><div class="content"><a class="title" href="/2025/11/26/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%807%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础7移动通信网络">网规基础7移动通信网络</a><time datetime="2025-11-26T02:46:00.000Z" title="Created 2025-11-26 10:46:00">2025-11-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/19/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%806%E6%97%A0%E7%BA%BF%E4%B8%AA%E4%BA%BA%E7%BD%91/" title="网规基础6无线个人网"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础6无线个人网"/></a><div class="content"><a class="title" href="/2025/11/19/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%806%E6%97%A0%E7%BA%BF%E4%B8%AA%E4%BA%BA%E7%BD%91/" title="网规基础6无线个人网">网规基础6无线个人网</a><time datetime="2025-11-19T11:22:37.783Z" title="Created 2025-11-19 19:22:37">2025-11-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/05/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%805%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础5无线通信网络"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础5无线通信网络"/></a><div class="content"><a class="title" href="/2025/11/05/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%805%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础5无线通信网络">网规基础5无线通信网络</a><time datetime="2025-11-05T10:00:00.000Z" title="Created 2025-11-05 18:00:00">2025-11-05</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2025 By <a class="footer-bar-link" href="/" title="JYhe" target="_blank">JYhe</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/" title="tag"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/" title="category"><div class="headline">Categories</div><div class="length-num">1</div></a></div><span class="sidebar-menu-item-title">Function</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="Display Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>Display Mode</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 0.88rem;">基础知识<sup>9</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/" style="font-size: 0.88rem;">网络规划设计师<sup>9</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;undefined&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("27/10/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 JYhe 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>

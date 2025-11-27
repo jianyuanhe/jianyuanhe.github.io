@@ -1,0 +1,448 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>网规基础9网络层协议 | JYhe</title><meta name="keywords" content="网络规划设计师,基础知识"><meta name="author" content="JYhe"><meta name="copyright" content="JYhe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="网规基础9网络层协议"><meta name="application-name" content="网规基础9网络层协议"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="网规基础9网络层协议"><meta property="og:url" content="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/index.html"><meta property="og:site_name" content="JYhe"><meta property="og:description" content="IP 协议 IP 协议是Internet 中的网络层协议，提供无连接服务。 IP 协议数据单元 IP 协议的数据格式如图所示，其中的字段如下  • 版本号：协议的版本号，不同版本的协议格式或语义可能不同，现在常用的是1Pv4, 正在逐渐过渡到IPV6。 • IHL: IP 头长度，以 32位宇计数，"><meta property="og:locale" content="en"><meta property="og:image" content="http://example.com/img/default_cover.jpg"><meta property="article:author" content="JYhe"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="http://example.com/img/default_cover.jpg"><meta name="description" content="IP 协议 IP 协议是Internet 中的网络层协议，提供无连接服务。 IP 协议数据单元 IP 协议的数据格式如图所示，其中的字段如下  • 版本号：协议的版本号，不同版本的协议格式或语义可能不同，现在常用的是1Pv4, 正在逐渐过渡到IPV6。 • IHL: IP 头长度，以 32位宇计数，"><link rel="shortcut icon" href="/img/JYHE.jpg"><link rel="canonical" href="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  music_page_default: undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: false,
+  mainTone: undefined,
+  authorStatus: {"skills":null},
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"Author: JYhe","link":"Link: ","source":"Source: JYhe","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.","copySuccess":"Copy success, copy and reprint please mark the address of this article"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'JYhe',
+  title: '网规基础9网络层协议',
+  postAI: '',
+  pageFillDescription: 'IP 协议, IP 协议数据单元, IP 地址与子网划分, IPv6 协议, 1 IPv6 地址自动配置, (5)邻节点发现过程, ICMP 协议协议协议是中的网络层协议提供无连接服务协议数据单元协议的数据格式如图所示其中的字段如下版本号协议的版本号不同版本的协议格式或语义可能不同现在常用的是正在逐渐过渡到头长度以位宇计数最小为即个字节服务类型用于区分不同的可靠性优先级延迟和吞吐率的参数总长度包含头在内的数据单元的总长度宇节数标识符唯一标识数据报的标识符标志包括个标志一个是标志用于分段和重装配另一个是禁止分段标志如果认为目标站不具备重装配能力则可使这个标志置位这样如果数据报要经过一个最大分组长度较小的网络就会被丢弃因而最好使用源路由以避免这种灾难发生第个标志当前没有启用段偏置值指明该段处于原来数据报中的位置生存期用经过的路由器个数表示协议上层协议或头校检和对头的校验序列在数据报传输过程中头中的某些字段可能改变例如生存期以及与分段有关的宇段所以校检和要在每一个经过的路由器中进行校验和重新计算校检和是对头中的所有位字进行的补码相加得到的计算时假定校检和字段本身为源地址给网络和主机地址分别分配若干位例如和和和等目标地址同上任选数据可变长包含发送者想要发送的任何数据补丁补齐位的边界用户数据以宇节为单位的用户数据和头加在一起的长度不超过字节地址与子网划分网络地址采用网络主机的形式其中网络部分是网络的地址编码主机部分是网络中一个主机的地址编码地址的格式如图所示地址分为类类类类是常用地址地址的编码规定全表示本地地址即本地网络或本地主机全表示广播地址任何网站都能接收所以除去全和全地址外类有个网络地址万个主机地址类有个网络地址个主机地址类有万个网络地址个主机地址地址通常用十进制数表示即把整个地址划分为个字节每个字节用一个十进制数表示中间用圆点分隔根据地址的第一个字节就可判断它是类类还是类地址子网划分把主机地址部分再划分为子网地址和主机地址形成了三级寻址结构这种三级寻址方式需要子网掩码的支持子网地址对网络外部是透明的当分组到达目标网络后网络边界路由器把位的地址与子网掩码进行逻辑与运算从而得到子网地址并据此转发到适当的子网中图所示为类网络地址被划分为两个子网的情况虽然子网掩码是对网络编址的有益补充但是还存在着一些缺陷例如一个组织有几个包含台左右计算机的子网又有一些只包含几台计算机的较小的子网在这种情况下如果将一个类地址分成个子网每个子网可以包含台计算机大的子网基本上利用了全部地址但是小的子网却浪费了许多地址为了解决这个问题避免任何可能的地址浪费就出现了可变长子网掩码的编址方案这样可以在地址后面加上位数来表示子网掩码中的个数例如的前位表示网络号和子网号即子网掩码为位长主机地址为位长协议协议的特点更大的地址空间将地址从的增大到了扩展的地址层次结构灵活的首部格式改进的选项增强安全性对支持地址将地址空间分为两大部分如图所示第一部分是可变长度的类型前缀它定义了地址的目的第二部分是地址的其他部分其长度也是可变的网络规划设计师地址格式每个的值用十六进制值表示各值之间用冒号分隔数据报的目的地址可以是以下三种基本类型地址之一单播单播就是传统的点对点通信多播多播是一点对多点的通信任播这是增加的一种类型任播的目的站是一组计算机但数据报在交付时只交付给其中的一个通常是距离最近的一个前缀为是保留一小部分地址与兼容的这是因为必须要考虑在比较长的时期和将会同时存在而有的结点不支持扩展了地址的分级概念使用以下三个等级第一级顶级指明全球都知道的公共拓扑第二级地点级指明单个的地点第三级指明单个的网络接口报文格式数据报首部格式如图所示数据报各字段说明如下的基本首部具体包括版本它指明了协议的版本对该字段总是流量类型这是为了区分不同的数据报的类别或优先级流标签用于源节点标识路由器需要特殊处理的包序列载荷长度它指明数据报除基本首部以外的字节数所有扩展首部都算在有效载荷之内其最大值是下个首部它相当于的协议字段或可选字段跳数限制源站在数据报发出时即设定跳数限制路由器在转发数据报时将跳数限制宇段中的值减当跳数限制的值为零时就要将此数据报丢弃源地址指明生成数据包的主机的地址目的地址指明数据包最终要到达的目的主机的地址的扩展首部将原来首部中选项的功能都放在扩展首部中并将扩展首部留给路径两端的源站和目的站的主机来处理数据报途中经过的路由器都不处理这些扩展首部只有一个首部例外即逐跳选项扩展首部这样就大大提高了路由器的处理效率在中定义了六种扩展首部逐跳选项此扩展头必须紧跟在基本首部之后它包含所经路径上的每一个节点都必须检查的选项数据由于它需要在每个中间路由器都进行处理所以只有在绝对必要的时候才出现路由选择此扩展头指明数据包在到达目的地途中将经过的各节点的地址列表分片当源地址发送的数据包比到达目的地址所经过的路径上的最小还要大时这个数据包就要被分成几段分别发送这时就要用到分片头鉴别鉴别头的功能是实现了数据的完整性和对数据来源的认证封装安全有效载荷封装安全有效载荷头提供数据加密功能实现端到端的加密提供无连接的完整性和防重发服务封装安全有效载荷头可以单独使用也可以在使用隧道模式时嵌套使用目的站选项目的站选项头中携带仅需要最终目的节点检验的可选信息它要在目的地址域所列的第一个目的主机上处理也要在路由头所列的后续目的主机上处理地址自动配置中地址自动配置有两种方式有状态地址自动配置和无状态地址自动配置当站点并不是特别关心主机所使用的精确地址时只要它们是唯一的井且是可路由的就能使用无状态方式当站点严格控制地址分配时就使用有状态方式有状态地址自动配置在这种模式下主机可以从服务器获得接口地址也可以从服务器上获得配置信息和参数服务器中维护着一个数据库其中记录着主机和地址分配的列表比较常用的是协议即支持的动态主机配置协议它允许服务器把诸如网络地址等信息传给节点服务器与客户端使用来交换报文服务器和中继代理使用端口来监昕报文客户端使用端口来监听报文无状态地址自动配置这种模式要求本地链路支持组擂而且网络接口能够发送和接收组播包采用这种方式可以为任意主机配置一个地址这个地址内嵌一个以太网地址由于以太网地址全球唯一因此获得的地址也是唯一的具体过程如下首先进行自动配置的节点必须确定自己的链路本地地址然后必须验证该链路本地地址在链路上的唯一性最后节点必须确定需要配置的信息该信息可能是节点的地址或者是其他配置信息或者两者皆有具体地说在无状态地址自动配置过程中主机首先通过将它的网卡地址附加在链路本地地址前缀之后产生一个链路本地单播地址已经将网卡地址由位改为了位如果主机采用的网卡的地址依然是位那么网卡驱动程序会根据的一个公式将位地址转换为位地址接着主机向该地址发出一个邻居发现请求以验证地址的唯一性如果请求没有得到响应则表明主机自我配置的链路本地单播地址是唯一的否则主机将使用一个随机产生的接口组成一个新的链路本地单播地址然后以该地址为源地址主机向本地链路中所有路由器多点传送一个路由器请求来请求配置信息路由器以一个包含一个可聚集全球单播地址前缀和其他相关配置信息的路由器宣告作为响应主机用它从路由器得到的全球地址前缀加上自己的接口自动配置全球地址然后就可以与中的其他主机通信了如果本地网络孤立于其他网络则节点必须寻找配置服务器来完成其配置否则节点必须侦听路由器宣告报文这些报文周期性地发往所有主机的组播地址以指明诸如网络地址和子网地址等配置信息节点可以等待路由器宣告也可以通过发送组播请求给所有路由器的组播地址来请求路由器发送宣告一旦收到路由器的响应节点就可以使用响应的信息来完成自动配置邻节点发现过程邻居发现协议使用一系列的控制信息报文来实现相邻节点的信息交互管理井在一个子网中保持网络层地址和链路层地址之间的映射邻居发现协议中定义了种类型的信息路由器宣告路由器请求路由重定向邻居请求和邻居宣告邻节点发现过程具体如下路由器发现即帮助主机来识别本地路由器前缀发现节点使用此机制来确定指明链路本地地址的地址前缀以及必须发送给路由器转发的地址前缀参数发现帮助节点确定诸如本地链路之类的信息地址自动配置用于节点自动配置地址解析替代了和帮助节点从目的地址中确定本地节点即邻居的链路层地址下一跳确定可用于确定包的下一个目的地即可确定包的目的地是否在本地链路上如果在本地链路下一跳就是目的地否则包需要选路下一跳就是路由器邻居发现可用于确定应使用的路由器邻居不可达检测帮助节点确定邻居目的节点或路由器是否可达重复地址检测帮助节点确定它想使用的地址在本地链路上是否己被占用重定向有时节点选择的转发路由器对于待转发的包而言并非最佳这种情况下该转发路由器可以对节点进行重定向使它将包发送给更佳的路由器协议与协议同属于网络层用于传送有关通信问题的消息例如数据报不能到达目标站路由器没有足够的缓存空间或者路由器向发送主机提供最短通路信息等报文封装在数据报中传送因而不保证可靠的提交报文有种之多报文格式如图所示其中类型字段表示报文的类型代码字段可表示报文的少量参数当参数较多时写入位的参数字段报文携带的信息包含在可变长的信息字段中校验和宇段是关于整个报文的校验和',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-28 00:11:05',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha512-fHwaWebuwA7NSF5Qg/af4UeDx9XqUpYpOGgubo3yWu+b2IQR4UeQwbb42Ti7gVAjNtVoI/I9TEoYeu9omwcC6g==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.0"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="/img/JYHE.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">JYhe</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 1.05rem;">基础知识<sup>9</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/" style="font-size: 1.05rem;">网络规划设计师<sup>9</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92/" itemprop="url">网络规划</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>网络规划设计师</span></a><a class="article-meta__tags" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>基础知识</span></a></span></div></div><h1 class="post-title" itemprop="name headline">网规基础9网络层协议</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2025-11-27T05:42:00.000Z" title="Created 2025-11-27 13:42:00">2025-11-27</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-11-27T16:11:05.872Z" title="Updated 2025-11-28 00:11:05">2025-11-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为广东"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>广东</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="/img/default_cover.jpg"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/"><header><a class="post-meta-categories" href="/categories/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92/" itemprop="url">网络规划</a><a href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/" tabindex="-1" itemprop="url">网络规划设计师</a><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" tabindex="-1" itemprop="url">基础知识</a><h1 id="CrawlerTitle" itemprop="name headline">网规基础9网络层协议</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">JYhe</span><time itemprop="dateCreated datePublished" datetime="2025-11-27T05:42:00.000Z" title="Created 2025-11-27 13:42:00">2025-11-27</time><time itemprop="dateCreated datePublished" datetime="2025-11-27T16:11:05.872Z" title="Updated 2025-11-28 00:11:05">2025-11-28</time></header><h2 id="IP-协议">IP 协议</h2>
+<p>IP 协议是Internet 中的网络层协议，提供无连接服务。</p>
+<h3 id="IP-协议数据单元">IP 协议数据单元</h3>
+<p>IP 协议的数据格式如图所示，其中的字段如下</p>
+<p><img src="/img/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/IP%E5%8D%8F%E8%AE%AE%E6%A0%BC%E5%BC%8F.png" alt=""></p>
+<p>• 版本号：协议的版本号，不同版本的协议格式或语义可能不同，现在常用的是1Pv4,<br>
+正在逐渐过渡到IPV6。<br>
+• IHL: IP 头长度，以 32位宇计数， 最小为 5，即 20个字节。<br>
+服务类型：用于区分不同的可靠性、优先级、延迟和吞吐率的参数。<br>
+•总长度：包含IP头在内的数据单元的总长度（宇节数）<br>
+•标识符：唯一标识数据报的标识符。<br>
+•标志： 包括3个标志， 一个是M标志，用于分段和重装配； 另一个是禁止分段标志，<br>
+如果认为目标站不具备重装配能力，则可使这个标志置位，这样如果数据报要经过一<br>
+个最大分组长度较小的网络， 就会被丢弃， 因而最好使用源路由以避免这种灾难发生；<br>
+第3个标志当前没有启用。<br>
+•段偏置值： 指明该段处于原来数据报中的位置。<br>
+•生存期：用经过的路由器个数表示。<br>
+•协议： 上层协议（TCP或UDP） 。<br>
+•头校检和：对IP头的校验序列。在数据报传输过程中IP头中的某些字段可能改变（例<br>
+如生存期，以及与分段有关的宇段） ， 所以校检和要在每一个经过的路由器中进行校<br>
+验和重新计算。 校检和是对IP头中的所有 16位字进行1的补码相加得到的，计算时<br>
+假定校检和字段本身为0。<br>
+•源地址： 给网络和主机地址分别分配若干位， 例如7和24、 14和 16、 21 和8等。<br>
+•目标地址： 同上。<br>
+•任选数据： 可变长，包含发送者想要发送的任何数据。<br>
+•补丁： 补齐32位的边界。<br>
+•用户数据：以宇节为单位的用户数据，和IP头加在一起的长度不超过65535字节。</p>
+<h3 id="IP-地址与子网划分">IP 地址与子网划分</h3>
+<p>IP 网络地址采用 “网络·主机”的形式，其中网络部分是网络的地址编码， 主机部分是网 络中一个主机的地址编码。 IP地址的格式如图所示</p>
+<p><img src="/img/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/IP%E5%9C%B0%E5%9D%80%E7%9A%84%E6%A0%BC%E5%BC%8F.png" alt=""><br>
+IP 地址分为5类。 A类、 B类、 C类是常用地址。 IP地址的编码规定全0表示本地地址， 即本地网络或本地主机： 全l表示广播地址，任何网站都能接收。 所以，除去全0和全l地址 外， A类有 126个网络地址， 1600万个主机地址： B类有 16382个网络地址， 64000个主机地 址： C类有200万个网络地址， 254个主机地址。<br>
+IP 地址通常用十进制数表示，即把整个地址划分为4个字节， 每个字节用一个十进制数表示，中间用圆点分隔。根据IP地址的第一个字节， 就可判断它是A类、 B类还是C类地址。 子网划分把主机地址部分再划分为子网地址和主机地址，形成了三级寻址结构。 这种三级寻址方式需要子网掩码的支持<br>
+<img src="/img/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81.png" alt=""><br>
+子网地址对网络外部是透明的。当IP分组到达目标网络后，网络边界路由器把32位的IP 地址与子网掩码进行逻辑“与”运算，从而得到子网地址，并据此转发到适当的子网中。 图所示为B类网络地址被划分为两个子网的情况<br>
+<img src="/img/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/IP%E5%9C%B0%E5%9D%80%E4%B8%8E%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81.png" alt=""><br>
+虽然子网掩码是对网络编址的有益补充，但是还存在着一些缺陷。 例如，一个组织有几个 包含 25 台左右计算机的子网，又有一些只包含几台计算机的较小的子网。在这种情况下，如果将一个C类地址分成6个子网，每个子网可以包含30 台计算机，大的子网基本上利用了全部地址，但是小的子网却浪费了许多地址。为了解决这个问题，避免任何可能的地址浪费，就 出现了可变长子网掩码（Variable Length Subnetwork Mask, VLSM）的编址方案。这样，可以 在IP 地址后面加上“／位数”来表示子网掩码中“1”的个数。例如， 202.117.125.0/27 的前 27 位表示网络号和子网号，即子网掩码为27位长， 主机地址为5位长。</p>
+<h3 id="IPv6-协议">IPv6 协议</h3>
+<p>IPv6 协议的特点<br>
+•更大的地址空间。 IPv6 将地址从 IPv4 的 32bit 增大到了 128bit<br>
+•扩展的地址层次结构。<br>
+•灵活的首部格式。<br>
+•改进的选项。<br>
+•增强安全性。<br>
+•对QoS支持。<br>
+IPv6 地址 IPv6 将 128 bit 地址空间分为两大部分， 如图所示。第一部分是可变长度的类型前缀， 它定义了地址的目的。 第二部分是地址的其他部分， 其长度也是可变的</p>
+<p>![](/img/网络规划设计师/(IPv6地址格式.png)</p>
+<p>每个 16bit 的值用十六进制值表示， 各值之间用冒号分隔。<br>
+IPv6 数据报的目的地址可以是以下三种基本类型地址之一：<br>
+•单播 (unicast)。 单播就是传统的点对点通信。<br>
+•多播 (multicast） 。 多播是一点对多点的通信。<br>
+•任播 (anycast） 。 这是 IPv6 增加的一种类型。 任播的目的站是一组计算机， 但数据报在交付时只交付给其中的一个，通常是距离最近的一个。<br>
+前缀为 0000 0000 是保留一小部分地址与 IPv4 兼容的，这是因为必须要考虑在比较长的时期， IPv4 和 IPv6 将会同时存在，而有的结点不支持 IPv6<br>
+IPv6 扩展了地址的分级概念，使用以下三个等级：<br>
+<strong>•第一级（顶级)，指明全球都知道的公共拓扑。</strong><br>
+<strong>•第二级（地点级)，指明单个的地点。</strong><br>
+<strong>•第三级，指明单个的网络接口。</strong><br>
+IPv6 报文格式 IPv6 数据报首部格式如图所示。<br>
+IPv6 数据报各字段说明如下。<br>
+IPv6 的基本首部， 具体包括：<br>
+•版本（version) : 4 bit，它指明了协议的版本，对 IPv6 该字段总是 6。<br>
+•流量类型 (Traffic Class) : 8 bit，这是为了区分不同的 IPv6 数据报的类别或优先级。<br>
+•流标签 (Flow Label) : 20bit，用于源节点标识IPv6 路由器需要特殊处理的包序列。<br>
+•载荷长度（Payload Length) : 16 bit，它指明 IPv6 数据报除基本首部以外的字节数 （所有扩展首部都算在有效载荷之内） ， 其最大值是 64KB。<br>
+• 下个首部（NextHead) : 8 bit。 它相当于 IPv4 的协议字段或可选字段。<br>
+• 跳数限制 （HopLimit) : 8 bit。源站在数据报发出时即设定跳数限制。 路由器在转发 数据报时将跳数限制宇段中的值减1。 当跳数限制的值为零时， 就要将此数据报丢弃。<br>
+• 源地址（SourceAddress) : 128bit， 指明生成数据包的主机的 IPv6 地址。<br>
+•目的地址（Destination Address) : 128bit， 指明数据包最终要到达的目的主机的 IPv6 地址。<br>
+<img src="/img/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/IPv6%E6%95%B0%E6%8D%AE%E6%8A%A5%E6%A0%BC%E5%BC%8F.png" alt=""><br>
+(2) IPv6 的扩展首部。 IPv6 将原来 IPv4 首部中选项的功能都放在扩展首部中，并将扩展 首部留给路径两端的源站和目的站的主机来处理。数据报途中经过的路由器都不处理这些扩展 首部（只有一个首部例外，即逐跳选项扩展首部），这样就大大提高了路由器的处理效率。 在［RFC 2460］中定义了六种扩展首部：<br>
+• 逐跳选项： 此扩展头必须紧跟在IPv6基本首部之后， 它包含所经路径上的每一个节点 都必须检查的选项数据。 由于它需要在每个中间路由器都进行处理，所以只有在绝对 必要的时候才出现。<br>
+• 路由选择： 此扩展头指明数据包在到达目的地途中将经过的各节点的地址列表。<br>
+• 分片： 当IPv6源地址发送的数据包比到达目的地址所经过的路径上的最小MTU还要大时， 这个数据包就要被分成几段分别发送，这时就要用到分片头。<br>
+• 鉴别： 鉴别头的功能是实现了数据的完整性和对数据来源的认证。<br>
+• 封装安全有效载荷： 封装安全有效载荷头提供数据加密功能，实现端到端的加密， 提 供无连接的完整性和防重发服务。封装安全有效载荷头可以单独使用， 也可以在使用 隧道模式时嵌套使用。<br>
+• 目的站选项： 目的站选项头中携带仅需要最终目的节点检验的可选信息。 它要在IPv6 目的地址域所列的第一个目的主机上处理，也要在路由头所列的后续目的主机上处理。</p>
+<h3 id="1-IPv6-地址自动配置">1 IPv6 地址自动配置</h3>
+<p>IPv6 中地址自动配置有两种方式： 有状态地址自动配置和无状态地址自动配置。当站点并<br>
+不是特别关心主机所使用的精确地址时，只要它们是唯一的，井且是可路由的，就能使用无状<br>
+态方式： 当站点严格控制地址分配时，就使用有状态方式。</p>
+<p>(1）有状态地址自动配置。在这种模式下， 主机可以从服务器获得接口地址，也可以从服 务器上获得配置信息和参数。服务器中维护着一个数据库，其中记录着主机和地址分配的列表。 比较常用的是DHCPv6 (Dynamic Host Configuration Protocol for IPv6）协议， 即支持 IPv6 的动 态主机配置协议。它允许DHCPv6服务器把诸如IPv6 网络地址等信息传给1Pv6节点。DHCPv6 服务器与客户端使用UDP来交换DHCPv6报文。服务器和中继代理使用 UDP端口 547来监昕 DHCPv6 报文； 客户端使用 UDP端口 546来监听报文。</p>
+<p>(2）无状态地址自动配置。这种模式要求本地链路支持组擂，而且网络接口能够发送和接 收组播包。 采用这种方式可以为任意主机配置一个IPv6地址，这个地址内嵌一个以太网地址， 由于以太网地址全球唯一，因此获得的IPv6地址也是唯一的。<br>
+具体过程如下：<br>
+首先，进行自动配置的节点必须确定自己的链路本地地址。<br>
+然后，必须验证该链路本地地址在链路上的唯一性。<br>
+最后，节点必须确定需要配置的信息。该信息可能是节点的 IP 地址，或者是其他配置信息， 或者两者皆有。<br>
+具体地说， 在无状态地址自动配置过程中， 主机首先通过将它的网卡MAC地址附加在链 路本地地址前缀 1111111010 之后，产生一个链路本地单播地址 (IEEE 已经将网卡 MAC 地址 由 48 位改为了 64位。如果主机采用的网卡的MAC地址依然是48位，那么 IPv6 网卡驱动程序会根据IEEE 的一个公式将48位MAC地址转换为64位MAC地址） 。接着主机向该地址发出一个邻居发现请求（Neighbor Discovery Request），以验证地址的唯一性。 如果请求没有得到响应，则表明主机自我配置的链路本地单播地址是唯一的。否则， 主机将使用一个随机产生 的接口 ID 组成一个新的链路本地单播地址。然后，以该地址为源地址，主机向本地链路中所 有路由器多点传送一个路由器请求（Router Solicitation）来请求配置信息，路由器以一个包含一个可聚集全球单播地址前缀和其他相关配置信息的路由器宣告（Router Advertisement）作为响应。主机用它从路由器得到的全球地址前缀加上自己的接口 ID，自动配置全球地址，然后就可以与Internet 中的其他主机通信了。</p>
+<p>如果本地网络孤立于其他网络，则节点必须寻找配置服务器来完成其配置：否则，节点必须侦听路由器宣告报文。这些报文周期性地发往所有主机的组播地址，以指明诸如网络地址和子网地址等配置信息。 节点可以等待路由器宣告，也可以通过发送组播请求给所有路由器的组播地址来请求路由器发送宣告。 一旦收到路由器的响应，节点就可以使用响应的信息来完成自动配置。</p>
+<h3 id="5-邻节点发现过程">(5)邻节点发现过程</h3>
+<p>邻居发现协议使用一系列的 IPv6 控制信息报文来实现相邻节点的信息交互管理，井在一 个子网中保持网络层地址和链路层地址之间的映射。邻居发现协议中定义了 5种类型的信息： 路由器宣告、路由器请求、路由重定向、 邻居请求和邻居宣告。 邻节点发现过程具体如下：<br>
+①路由器发现：即帮助主机来识别本地路由器。<br>
+②前缀发现： 节点使用此机制来确定指明链路本地地址的地址前缀以及必须发送给路由 器转发的地址前缀。<br>
+③参数发现： 帮助节点确定诸如本地链路MTU之类的信息。<br>
+④地址自动配置： 用于IPv6节点自动配置。<br>
+⑤地址解析： 替代了ARP和RARP， 帮助节点从目的IP地址中确定本地节点（即邻居） 的链路层地址。<br>
+⑥下一跳确定： 可用于确定包的下一个目的地，即可确定包的目的地是否在本地链路上。 如果在本地链路，下一跳就是目的地；否则，包需要选路，下一跳就是路由器，邻居发现可用 于确定应使用的路由器。<br>
+⑦邻居不可达检测： 帮助节点确定邻居（目的节点或路由器）是否可达。 ③ 重复地址检测： 帮助节点确定它想使用的地址在本地链路上是否己被占用。 ⑨重定向： 有时节点选择的转发路由器对于待转发的包而言并非最佳。 这种情况下，该 转发路由器可以对节点进行重定向， 使它将包发送给更佳的路由器。</p>
+<h3 id="ICMP-协议">ICMP 协议</h3>
+<p>ICMP (Internet Control Message Protocol) 与 IP 协议同属于网络层， 用于传送有关通信问 题的消息，例如数据报不能到达目标站，路由器没有足够的缓存空间， 或者路由器向发送主机 提供最短通路信息等。 ICMP报文封装在IP数据报中传送， 因而不保证可靠的提交。 ICMP报文有 11 种之多，报文格式如图所示。 其中， 类型字段表示ICMP报文的类型：代码字段可表示报文的少量参数： 当参数较多时写入32位的参数字段： ICMP报文携带的信息包含在可变长的信息字段中；校验和宇段是关于整个ICMP报文的校验和。</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src="/img/JYHE.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src="/img/JYHE.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">JYhe</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/')">网规基础9网络层协议</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=网规基础9网络层协议&amp;url=http://example.com/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/&amp;pic=/img/default_cover.jpg" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>网络规划设计师<span class="tagsPageCount">9</span></a><a class="post-meta__box__tags" href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>基础知识<span class="tagsPageCount">9</span></a></div></div></div><div class="post_share"><div class="social-share" data-image="/img/default_cover.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/"><img class="prev-cover" src="/img/default_cover.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">网规基础8网络互连与互联网</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2025/10/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%801%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/" title="1计算机网络历史组成"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-10-27</div><div class="title">1计算机网络历史组成</div></div></a></div><div><a href="/2025/10/29/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%802%E6%95%B0%E6%8D%AE%E9%80%9A%E4%BF%A1%E6%A6%82%E5%BF%B5/" title="2数据通讯概念"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-10-29</div><div class="title">2数据通讯概念</div></div></a></div><div><a href="/2025/10/30/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%803%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%EF%BC%8C%E8%B0%83%E5%88%B6%E6%8A%80%E6%9C%AF%E4%B8%8E%E9%80%9A%E4%BF%A1%E9%A2%86%E5%9F%9F/" title="3数据编码，调制技术与通信领域"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-10-30</div><div class="title">3数据编码，调制技术与通信领域</div></div></a></div><div><a href="/2025/11/05/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%805%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础5无线通信网络"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-11-05</div><div class="title">网规基础5无线通信网络</div></div></a></div><div><a href="/2025/11/02/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%804%E5%B1%80%E5%9F%9F%E7%BD%91%EF%BC%8C%E5%B9%BF%E5%9F%9F%E7%BD%91/" title="网规基础4局域网，广域网"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-11-02</div><div class="title">网规基础4局域网，广域网</div></div></a></div><div><a href="/2025/11/19/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%806%E6%97%A0%E7%BA%BF%E4%B8%AA%E4%BA%BA%E7%BD%91/" title="网规基础6无线个人网"><img class="cover" src="/img/default_cover.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-calendar-days fa-fw"></i> 2025-11-19</div><div class="title">网规基础6无线个人网</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src="/img/JYHE.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src="https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png" alt="status"/></div></div><div class="author-info__description"></div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#IP-%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.</span> <span class="toc-text">IP 协议</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IP-%E5%8D%8F%E8%AE%AE%E6%95%B0%E6%8D%AE%E5%8D%95%E5%85%83"><span class="toc-number">1.1.</span> <span class="toc-text">IP 协议数据单元</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IP-%E5%9C%B0%E5%9D%80%E4%B8%8E%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86"><span class="toc-number">1.2.</span> <span class="toc-text">IP 地址与子网划分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IPv6-%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.3.</span> <span class="toc-text">IPv6 协议</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-IPv6-%E5%9C%B0%E5%9D%80%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE"><span class="toc-number">1.4.</span> <span class="toc-text">1 IPv6 地址自动配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E9%82%BB%E8%8A%82%E7%82%B9%E5%8F%91%E7%8E%B0%E8%BF%87%E7%A8%8B"><span class="toc-number">1.5.</span> <span class="toc-text">(5)邻节点发现过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ICMP-%E5%8D%8F%E8%AE%AE"><span class="toc-number">1.6.</span> <span class="toc-text">ICMP 协议</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/" title="网规基础9网络层协议"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础9网络层协议"/></a><div class="content"><a class="title" href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%809%E7%BD%91%E7%BB%9C%E5%B1%82%E5%8D%8F%E8%AE%AE/" title="网规基础9网络层协议">网规基础9网络层协议</a><time datetime="2025-11-27T05:42:00.000Z" title="Created 2025-11-27 13:42:00">2025-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/" title="网规基础8网络互连与互联网"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础8网络互连与互联网"/></a><div class="content"><a class="title" href="/2025/11/27/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%808%E7%BD%91%E7%BB%9C%E4%BA%92%E8%BF%9E%E4%B8%8E%E4%BA%92%E8%81%94%E7%BD%91/" title="网规基础8网络互连与互联网">网规基础8网络互连与互联网</a><time datetime="2025-11-27T05:42:00.000Z" title="Created 2025-11-27 13:42:00">2025-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/26/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%807%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础7移动通信网络"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础7移动通信网络"/></a><div class="content"><a class="title" href="/2025/11/26/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%807%E7%A7%BB%E5%8A%A8%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础7移动通信网络">网规基础7移动通信网络</a><time datetime="2025-11-26T02:46:00.000Z" title="Created 2025-11-26 10:46:00">2025-11-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/19/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%806%E6%97%A0%E7%BA%BF%E4%B8%AA%E4%BA%BA%E7%BD%91/" title="网规基础6无线个人网"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础6无线个人网"/></a><div class="content"><a class="title" href="/2025/11/19/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%806%E6%97%A0%E7%BA%BF%E4%B8%AA%E4%BA%BA%E7%BD%91/" title="网规基础6无线个人网">网规基础6无线个人网</a><time datetime="2025-11-19T11:22:37.783Z" title="Created 2025-11-19 19:22:37">2025-11-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/05/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%805%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础5无线通信网络"><img src="/img/default_cover.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网规基础5无线通信网络"/></a><div class="content"><a class="title" href="/2025/11/05/%E7%BD%91%E8%A7%84%E5%9F%BA%E7%A1%805%E6%97%A0%E7%BA%BF%E9%80%9A%E4%BF%A1%E7%BD%91%E7%BB%9C/" title="网规基础5无线通信网络">网规基础5无线通信网络</a><time datetime="2025-11-05T10:00:00.000Z" title="Created 2025-11-05 18:00:00">2025-11-05</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2025 By <a class="footer-bar-link" href="/" title="JYhe" target="_blank">JYhe</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/" title="tag"><div class="headline">Tags</div><div class="length-num">2</div></a><a href="/categories/" title="category"><div class="headline">Categories</div><div class="length-num">1</div></a></div><span class="sidebar-menu-item-title">Function</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="Display Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>Display Mode</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> 关于本人</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 0.88rem;">基础知识<sup>9</sup></a><a href="/tags/%E7%BD%91%E7%BB%9C%E8%A7%84%E5%88%92%E8%AE%BE%E8%AE%A1%E5%B8%88/" style="font-size: 0.88rem;">网络规划设计师<sup>9</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;undefined&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("27/10/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.14",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 JYhe 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
